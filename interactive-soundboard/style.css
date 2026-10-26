@@ -2,24 +2,62 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
+#glitch-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-section {
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  /* color: blue; */
+}
+
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* margin-top: 200px; */
+  gap: 10px;
 }
 
-#button-1 {
+/* =============== styling of buttons ============= */
+.sound-button {
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+}
+
+/* =============== button hovering ============= */
+.sound-button:hover {
+  background-color: #00a2ff;
+  border-color: #00a2ff;
+}
+
+/* =============== glitch background ============= */
+#glitch-background {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
 }
-
-.tile {
-}
-
-.letter-card {
+/* =============== glitch text styling ============= */
+#glitch-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(252, 186, 3);
+  letter-spacing: 3px;
 }

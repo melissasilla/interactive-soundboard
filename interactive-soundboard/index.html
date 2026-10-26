@@ -9,16 +9,30 @@
     <title>Interactive Soundboard</title>
   </head>
   <body>
-    <section>
-      <!-- text input field -->
+    <!-- audio files -->
+    <audio id="sound-1" src="audio-sounds/kick_sweet.wav"></audio>
+    <audio id="sound-2" src="audio-sounds/BABY LIVE SNARE.wav"></audio>
+    <audio id="sound-3" src="audio-sounds/HI_HAT.wav"></audio>
+    <audio
+      id="sound-4"
+      src="audio-sounds/37 Bubbling And Rising Synth Tone. Reverby And Complex In Texture .wav"
+    ></audio>
 
-      <input type="text" id="words" />
+    <div class="button-container">
+      <button class="sound-button" data-sound="sound-1">Kick</button>
+      <button class="sound-button" data-sound="sound-2">Snare</button>
+      <button class="sound-button" data-sound="sound-3">Hi-Hat</button>
+      <button class="sound-button" data-sound="sound-4">Synth</button>
+    </div>
 
-      <!-- empty display box -->
-      <div class="empty-display-box"></div>
+    <!-- glitch screen container -->
+    <div id="glitch-background">
+      <!-- sound triggers -->
 
-      <!-- control panel (placeholder buttons) -->
-      <button type="button" id="button-1">Click Me!</button>
-    </section>
+      <!-- generated text noise will go here -->
+      <span id="glitch-text"></span>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
